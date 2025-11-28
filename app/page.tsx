@@ -1,4 +1,8 @@
-import Image from "next/image";
+import {
+  RoadmapPreview,
+  FitnessOverviewPreview,
+  MuscleHighlightPreview,
+} from "./components/PreviewSnapshots";
 
 export default function Home() {
   return (
@@ -71,6 +75,18 @@ export default function Home() {
                 <span className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">
                   Personalized Plan Generated
                 </span>
+              </div>
+            </div>
+
+            {/* Preview Snapshots Section */}
+            <div className="mt-10">
+              <p className="mb-6 text-center text-sm font-medium text-zinc-600 dark:text-zinc-400">
+                Your plan includes:
+              </p>
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+                <RoadmapPreview title="Your Roadmap" />
+                <FitnessOverviewPreview title="Fitness Overview" />
+                <MuscleHighlightPreview title="Target Muscles" />
               </div>
             </div>
           </div>
