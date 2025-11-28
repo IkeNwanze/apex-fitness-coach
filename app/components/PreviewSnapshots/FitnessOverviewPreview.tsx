@@ -50,7 +50,7 @@ export default function FitnessOverviewPreview({ title }: SnapshotProps) {
         {stats.map((stat, index) => (
           <div
             key={index}
-            className="flex flex-col rounded-xl bg-zinc-50 p-3 transition-all duration-200 hover:bg-zinc-100 hover:shadow-sm dark:bg-zinc-800 dark:hover:bg-zinc-750"
+            className="flex flex-col rounded-xl bg-zinc-50 p-3 transition-all duration-200 hover:bg-zinc-100 hover:shadow-sm dark:bg-zinc-800 dark:hover:bg-zinc-700"
           >
             <div className="mb-2 flex h-8 w-8 items-center justify-center rounded-lg bg-blue-100 text-blue-600 dark:bg-blue-950 dark:text-blue-400">
               {stat.icon}
